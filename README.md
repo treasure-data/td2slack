@@ -1,6 +1,6 @@
 # td2slack
 
-<img src="https://cdn.rawgit.com/treasure-data/td2slack/master/td2slack.svg" style="display:block"/>
+<img src="https://cdn.rawgit.com/treasure-data/td2slack/master/td2slack.svg" style="display:block; width:200px"/>
 
 Treasure Data to Slack bridge.
 
