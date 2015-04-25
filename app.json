@@ -2,6 +2,6 @@
   "name": "Treasure Data to Slack",
   "description": "A simple app to bridge Treasure Data and Slack",
   "repository": "https://github.com/treasure-data/td2slack",
-  "logo": "https://node-js-sample.herokuapp.com/node.svg",
+  "logo": "https://github.com/treasure-data/td2slack/blob/master/td2slack.svg",
   "keywords": ["Treasure Data", "Slack"]
 }
