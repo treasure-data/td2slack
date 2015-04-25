@@ -1,7 +1,5 @@
 # td2slack
 
-<img src="https://cdn.rawgit.com/treasure-data/td2slack/master/td2slack.svg" style="display:block; width:200px"/>
-
 Treasure Data to Slack bridge.
 
 ## What is this?
@@ -18,6 +16,7 @@ So, it's like
 
 ## How does it work?
 
+- Set the env variable `SLACK_WEBHOOK_URL` to be a Slack incoming webhook URL.
 - The path of the app corresponds to the ERB template under `/views`. So, if you specify the path `/daily_stats`, the template `/views/daily_stats.erb` is rendered as a Slack message.
 - The special variable `@td` holds the table data as a JSON whose keys are column names and values are column values. Ex: if the result output is
     
