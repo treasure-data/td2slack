@@ -29,6 +29,10 @@ So, it's like
     {"col1" => [100,200], "col2" => ["hello","world"]}
     ```
 
+## Easy Deploy on Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
 ## License
 
 Apache 2.0 License

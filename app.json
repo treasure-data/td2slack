@@ -1,0 +1,7 @@
+{
+  "name": "Treasure Data to Slack",
+  "description": "A simple app to bridge Treasure Data and Slack",
+  "repository": "https://github.com/treasure-data/td2slack",
+  "logo": "https://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["Treasure Data", "Slack"]
+}
