@@ -3,5 +3,11 @@
   "description": "A simple app to bridge Treasure Data and Slack",
   "repository": "https://github.com/treasure-data/td2slack",
   "logo": "https://cdn.rawgit.com/treasure-data/td2slack/master/td2slack.svg",
-  "keywords": ["Treasure Data", "Slack"]
+  "keywords": ["Treasure Data", "Slack"],
+  "env": {
+     "SLACK_WEBHOOK_URL": {
+       "description": "This is the incoming webhook URL to post to Slack",
+       "required": true
+    }
+  }
 }
