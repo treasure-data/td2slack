@@ -1,7 +1,6 @@
 require 'sinatra'
 require 'json'
 require 'slack-notifier'
-require 'tilt/erubis'
 
 ENV['SLACK_WEBHOOK_URL'] =      'https://hooks.slack.com/services/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'
 ENV['SLACK_WEBHOOK_URL_TEST'] = 'https://hooks.slack.com/services/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'
