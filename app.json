@@ -8,6 +8,10 @@
      "SLACK_WEBHOOK_URL": {
        "description": "This is the incoming webhook URL to post to Slack",
        "required": true
+    },
+     "SLACK_WEBHOOK_URL_TEST": {
+       "description": "This is the incoming webhook URL to post to Slack for Testing purpose",
+       "required": false
     }
   }
 }
