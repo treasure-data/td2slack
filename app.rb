@@ -2,8 +2,8 @@ require 'sinatra'
 require 'json'
 require 'slack-notifier'
 
-ENV['SLACK_WEBHOOK_URL'] =      'https://hooks.slack.com/services/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'
-ENV['SLACK_WEBHOOK_URL_TEST'] = 'https://hooks.slack.com/services/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'
+# ENV['SLACK_WEBHOOK_URL'] =      'https://hooks.slack.com/services/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'
+# ENV['SLACK_WEBHOOK_URL_TEST'] = 'https://hooks.slack.com/services/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'
 
 SLACK_NOTIFIER = {
   test: Slack::Notifier.new(ENV['SLACK_WEBHOOK_URL_TEST']),
