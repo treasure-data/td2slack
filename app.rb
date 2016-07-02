@@ -2,13 +2,15 @@ require 'sinatra'
 require 'json'
 require 'slack-notifier'
 
-# ENV['SLACK_WEBHOOK_URL'] =      'https://hooks.slack.com/services/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'
-# ENV['SLACK_WEBHOOK_URL_TEST'] = 'https://hooks.slack.com/services/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'
-
 SLACK_NOTIFIER = {
-  test: Slack::Notifier.new(ENV['SLACK_WEBHOOK_URL_TEST']),
-  default: Slack::Notifier.new(ENV['SLACK_WEBHOOK_URL']),
+  test: ENV['SLACK_WEBHOOK_URL_TEST'] && Slack::Notifier.new(ENV['SLACK_WEBHOOK_URL_TEST']),
+  default: ENV['SLACK_WEBHOOK_URL'] && Slack::Notifier.new(ENV['SLACK_WEBHOOK_URL']),
 }
+
+unless SLACK_NOTIFIER[:default]
+  puts "You must set the SLACK_WEBHOOK_URL environment variable with the Slack incoming webhook URL."
+  exit 1
+end
 
 put '/:template' do
   template = params[:template]
