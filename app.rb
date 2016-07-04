@@ -24,7 +24,7 @@ put '/:template' do
     #   "column_type": ["long", "string"]
     # }
     # See http://docs.treasuredata.com/articles/result-into-web
-    @td = Hash[payload['column_names'].zip(payload['data'])]
+    @td = Hash[payload['column_names'].zip(payload['data'].transpose)]
     s = erb template.to_sym, :layout => false
 
     slack_notifier = nil
