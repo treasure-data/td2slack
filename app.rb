@@ -33,8 +33,7 @@ def slack_notifier(params)
   if slack_notifier.nil?
     slack_notifier = SLACK_NOTIFIER[:default]
   end
-  # slack_notifier
-  SLACK_NOTIFIER[:test]
+  slack_notifier
 end
 
 put '/:template' do
