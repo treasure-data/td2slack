@@ -42,7 +42,6 @@ put '/:template' do
   begin
     payload = JSON.parse(request.body.read)
     @td = Hash[payload['column_names'].zip(payload['data'].transpose)]
-    puts @td.inspect
     s = erb template.to_sym, :layout => false
     slack_notifier(params).ping(s)
   rescue => e
